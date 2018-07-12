@@ -1,11 +1,11 @@
 //--------------------------------------------------------------------
 // Variables
-variable "service_name" {}
+variable "env" {}
 
 //--------------------------------------------------------------------
 // Modules
 module "network" {
-  source       = "app.terraform.io/Darnold-Hashicorp/network/azurerm"
-  version      = "1.2.0"
-  service_name = "${var.service_name}"
+  source  = "app.terraform.io/Darnold-Hashicorp/network/azurerm"
+  version = "1.3.0"
+  env     = "${var.env}"
 }
