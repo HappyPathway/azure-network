@@ -4,7 +4,7 @@ terraform {
     organization = "Darnold-Hashicorp"
 
     workspaces {
-      name = "AzureSimpleAppNetwork-Dev"
+      name = "AzureSimpleAppNetwork-Dev2"
     }
   }
 }
